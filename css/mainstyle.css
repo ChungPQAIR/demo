@@ -1,0 +1,120 @@
+/* Thêm font chử  */
+@font-face {
+  font-family: Logo;
+  src: url(../font/SansationLight.woff);
+}
+
+
+/* định dạng css cho mấy cái thẻ (tag) thì khỏi dùng dấu chấm trước tên tag */
+
+body {
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333; /*màu chữ*/
+  font-weight: 300; /*độ in đậm của chữ*/
+  margin: 0; /* vùng đệm giữa các thẻ (tag) trong trình duyệt : margin-top, margin-bottom, margin-right,  margin-left*/
+ /* padding: 0.9em 1em; /* thêm vào các khoảng cách bên trên,phải,dưới,trái : padding: 25px(TOP) 50px(right) 75px(BOT) 100px(left); */
+}
+
+
+h1 {
+  font-size: 1.5em;
+}
+
+
+
+p {
+  font-family: verdana;
+  font-size: 100%; /* cỡ chữ*/
+}
+
+
+/* định dạng css cho mấy cái class thì phải dùng dấu chấm trước tên tag ---------------------------------------------------------- */
+
+.clear{clear:both;}/*không cho dồn trangchugioithieu*/
+
+.logo{
+}
+
+.logo .textlogo {
+	color: white;
+  	text-align: center;
+  	font-family: Logo;
+  	font-size: 2em;
+}
+
+.formseach{
+}
+
+.header-right {
+  float: right;
+}
+
+.header-left {
+  float: left;
+
+			
+}
+
+.header-left .logo{
+	        display: inline-block; /* Thành phần sẽ hiển thị như một khối, nhưng là một khối nội tuyến. (inline, không ngắt dòng). */
+			float: left;
+			padding: 0.5em 0.8em; /* thêm vào các khoảng cách bên trên,phải,dưới,trái : padding: 25px(TOP) 50px(right) 75px(BOT) 100px(left); */
+}
+
+.header {
+   /* background-image: url("../img/canhan/bia.jpg");
+	/*background-position: right bottom, left top;
+   /* background-repeat: no-repeat, repeat; */
+/*	background-attachment: fixed;  */
+ /*   background-size: 100% 100%; */
+    background-color: #f65f4f; 
+    padding: 0.1em; /* thêm vào các khoảng cách bên trên,phải,dưới,trái : padding: 25px(TOP) 50px(right) 75px(BOT) 100px(left); */
+    margin: 0;
+    border: 0.01em solid white;  /* đường biên */
+
+    position: fixed; /* cố định đối tượng 1 vị trí với top và left*/
+ 	top: 0; /*Nằm trên cùng*/
+ 	left: 0; /*Nằm sát bên trái*/
+
+}
+
+
+.nav {
+
+	background-color: green;
+
+	padding: 0.3em 1em 0.3em 0.5em; /* thêm vào các khoảng cách bên trên,phải,dưới,trái : padding: 25px(TOP) 50px(right) 75px(BOT) 100px(left); */
+
+}
+
+.footer {
+
+	background-color: yellow;
+
+	padding: 0.3em 1em 0.3em 0.5em;  /* thêm vào các khoảng cách bên trên,phải,dưới,trái : padding: 25px(TOP) 50px(right) 75px(BOT) 100px(left); */
+
+}
+
+.sanpham {
+
+	background-color: blue;
+	margin-bottom: 0.5em;
+
+	padding: 0.3em 1em 0.3em 1em; /* thêm vào các khoảng cách bên trên,phải,dưới,trái : padding: 25px(TOP) 50px(right) 75px(BOT) 100px(left); */
+
+	box-sizing: border-box;
+
+}
+
+.motasanpham {
+	color: black;
+}
+
+.danhsachsanpham {
+}
+
+
+
+ 
+

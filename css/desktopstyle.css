@@ -1,0 +1,64 @@
+/*
+ *
+ * // by ♥ Lê Thị Ngọc Tuyền
+ * // https://www.facebook.com/my.meo.2k5
+ * // ltntuyen25@gmail.com
+ *
+ *
+ *
+ */
+ 
+  /* Reponsive cho màn hình Desktop */
+  
+ @media screen and (min-width: 1024px){
+
+
+/*
+ * start Reponsive Menu -----------------------------------------------------------------------------------------------------------------------
+ */
+
+ 
+ 	
+		.menu {
+		  	/*background-color: #333; */
+			list-style: none; /* Ký hiệu trước các danh mục thuộc thẻ <li> ( vd : * danh mục , - danh mục , hoặc : + danh mục)  */
+			margin: 0;
+			padding: 0 0.9em; /* thêm vào các khoảng cách bên trên,phải,dưới,trái : padding: 25px(TOP) 50px(right) 75px(BOT) 100px(left); */
+			overflow: hidden; /* Khi chiều cao của box không đủ chứa text, thì text bị tràn sẽ được dấu đi. */
+			border: 0;  /* đường biên */
+
+			z-index: 100000; /*Hiển thị lớp trên , lớp 100000*/
+		}
+
+
+		.mainmenu ul li{ 
+
+			display: inline-block; /* Thành phần sẽ hiển thị như một khối, nhưng là một khối nội tuyến. (inline, không ngắt dòng). */
+			list-style: none;
+			float: left;
+			padding: 0.5em 0.8em; /* thêm vào các khoảng cách bên trên,phải,dưới,trái : padding: 25px(TOP) 50px(right) 75px(BOT) 100px(left); */
+		}
+		.mainmenu li:hover{
+			background-color: #ddd;
+ 			color: black;
+		}
+		.mainmenu li.active{
+			background-color: #4CAF50;
+		}
+		.mainmenu li a {
+			text-transform: capitalize; /* Chữ đầu tiên của mỗi thành phần là chữ hoa.*/
+			text-decoration: none; /* Định dạng văn bản bình thường, đây là dạng mặc định. */
+			color: black;
+			font-size: 0.8em;
+		}
+		.mainmenu li.active a{
+			color: white;
+		}
+
+
+/*
+ * end Reponsive Menu -----------------------------------------------------------------------------------------------------------------------
+ */
+
+
+ }
