@@ -10,7 +10,7 @@
 body {
   background-color: white;
   font-family: Arial, Helvetica, sans-serif;
-  color: #333; /*màu chữ*/
+  color: black; /*màu chữ*/
   font-weight: 300; /*độ in đậm của chữ*/
   margin: 0; /* vùng đệm giữa các thẻ (tag) trong trình duyệt : margin-top, margin-bottom, margin-right,  margin-left*/
  /* padding: 0.9em 1em; /* thêm vào các khoảng cách bên trên,phải,dưới,trái : padding: 25px(TOP) 50px(right) 75px(BOT) 100px(left); */
@@ -20,6 +20,15 @@ body {
 h1 {
   font-size: 1.5em;
 }
+h2 {
+  font-size: 1.0em;
+}
+h3 {
+  font-size: 0.6em;
+}
+h4 {
+  font-size: 0.4em;
+}
 
 
 
@@ -28,23 +37,64 @@ p {
   font-size: 100%; /* cỡ chữ*/
 }
 
+a{
+	/*text-transform: capitalize;  /*Chữ đầu tiên của mỗi thành phần là chữ hoa.*/
+	text-decoration: none; /* Định dạng văn bản bình thường, đây là dạng mặc định. */
+	color: white;
+	font-size: 0.8em;
+}
+
+label{
+	color: #FF0066;
+}
+
 
 /* định dạng css cho mấy cái class thì phải dùng dấu chấm trước tên tag ---------------------------------------------------------- */
 
 .clear{clear:both;}/*không cho dồn trangchugioithieu*/
 
+
+/*
+ * start Reponsive header -----------------------------------------------------------------------------------------------------------------------
+ */
+
+
+
+.header {
+   
+    background-color: #89F4E7; /* mau nen chinh */
+    background-image: linear-gradient(#89F4E7, #E1F6F4); /* mau linear
+    padding: 0.1em; /* thêm vào các khoảng cách bên trên,phải,dưới,trái : padding: 25px(TOP) 50px(right) 75px(BOT) 100px(left); */
+    margin: 0;
+    border: 0.01em solid white;  /* đường biên */
+
+    position: fixed; /* cố định đối tượng 1 vị trí với top và left*/
+ 	top: 0; /*Nằm trên cùng*/
+ 	left: 0; /*Nằm sát bên trái*/
+ 	width: 100%
+
+}
+
 .logo{
+
+
 }
 
 .logo .textlogo {
 	color: white;
   	text-align: center;
   	font-family: Logo;
-  	font-size: 2em;
+  	font-size: 1.5em;
+  	}
+
+img.middle {  /* chữ sẽ ở giửa ảnh */
+  vertical-align: middle;
 }
 
 .formseach{
 }
+
+
 
 .header-right {
   float: right;
@@ -62,39 +112,26 @@ p {
 			padding: 0.5em 0.8em; /* thêm vào các khoảng cách bên trên,phải,dưới,trái : padding: 25px(TOP) 50px(right) 75px(BOT) 100px(left); */
 }
 
-.header {
-   /* background-image: url("../img/canhan/bia.jpg");
-	/*background-position: right bottom, left top;
-   /* background-repeat: no-repeat, repeat; */
-/*	background-attachment: fixed;  */
- /*   background-size: 100% 100%; */
-    background-color: #f65f4f; 
-    padding: 0.1em; /* thêm vào các khoảng cách bên trên,phải,dưới,trái : padding: 25px(TOP) 50px(right) 75px(BOT) 100px(left); */
-    margin: 0;
-    border: 0.01em solid white;  /* đường biên */
+/*
+ * end Reponsive header -----------------------------------------------------------------------------------------------------------------------
+ */
 
-    position: fixed; /* cố định đối tượng 1 vị trí với top và left*/
- 	top: 0; /*Nằm trên cùng*/
- 	left: 0; /*Nằm sát bên trái*/
 
-}
 
+
+
+/*
+ * start Reponsive nav -----------------------------------------------------------------------------------------------------------------------
+ */
 
 .nav {
 
-	background-color: green;
+	background-color: #EEEEEE;
 
 	padding: 0.3em 1em 0.3em 0.5em; /* thêm vào các khoảng cách bên trên,phải,dưới,trái : padding: 25px(TOP) 50px(right) 75px(BOT) 100px(left); */
 
 }
 
-.footer {
-
-	background-color: yellow;
-
-	padding: 0.3em 1em 0.3em 0.5em;  /* thêm vào các khoảng cách bên trên,phải,dưới,trái : padding: 25px(TOP) 50px(right) 75px(BOT) 100px(left); */
-
-}
 
 .sanpham {
 
@@ -113,6 +150,59 @@ p {
 
 .danhsachsanpham {
 }
+/*
+ * end Reponsive nav -----------------------------------------------------------------------------------------------------------------------
+ */
+
+
+
+
+
+/*
+ * start Reponsive footer -----------------------------------------------------------------------------------------------------------------------
+ */
+.footer {
+
+	background-color: black;
+
+	padding: 0.3em 1em 0.3em 1.5em;  /* thêm vào các khoảng cách bên trên,phải,dưới,trái : padding: 25px(TOP) 50px(right) 75px(BOT) 100px(left); */
+
+}
+
+
+
+
+.copyright {
+	color: gray;
+	font-size: 0.8em;
+	text-align: center;
+
+}
+.copyright a {
+	color: white;
+	font-size: 100%;
+
+}
+
+/*
+ * end Reponsive footer -----------------------------------------------------------------------------------------------------------------------
+ */
+
+
+
+.row {
+		  	/*background-color: #333; */
+			list-style: none; /* Ký hiệu trước các danh mục thuộc thẻ <li> ( vd : * danh mục , - danh mục , hoặc : + danh mục)  */
+			margin: 0;
+			padding: 0 0.1em; /* thêm vào các khoảng cách bên trên,phải,dưới,trái : padding: 25px(TOP) 50px(right) 75px(BOT) 100px(left); */
+			overflow: hidden; /* Khi chiều cao của box không đủ chứa text, thì text bị tràn sẽ được dấu đi. */
+			border: 0;  /* đường biên */
+
+
+
+			z-index: 100000; /*Hiển thị lớp trên , lớp 100000*/
+}
+
 
 
 

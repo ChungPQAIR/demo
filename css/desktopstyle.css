@@ -27,6 +27,8 @@
 			overflow: hidden; /* Khi chiều cao của box không đủ chứa text, thì text bị tràn sẽ được dấu đi. */
 			border: 0;  /* đường biên */
 
+
+
 			z-index: 100000; /*Hiển thị lớp trên , lớp 100000*/
 		}
 
@@ -34,15 +36,15 @@
 		.mainmenu ul li{ 
 
 			display: inline-block; /* Thành phần sẽ hiển thị như một khối, nhưng là một khối nội tuyến. (inline, không ngắt dòng). */
-			list-style: none;
+			list-style: none; /* kiểu danh sách  */
 			float: left;
 			padding: 0.5em 0.8em; /* thêm vào các khoảng cách bên trên,phải,dưới,trái : padding: 25px(TOP) 50px(right) 75px(BOT) 100px(left); */
 		}
-		.mainmenu li:hover{
+		.mainmenu li:hover{ /* hover là tác vụ khi rê chuột vào */
 			background-color: #ddd;
  			color: black;
 		}
-		.mainmenu li.active{
+		.mainmenu li.active{  /* trang đang hoạt động sẽ có class active */
 			background-color: #4CAF50;
 		}
 		.mainmenu li a {
@@ -58,6 +60,41 @@
 
 /*
  * end Reponsive Menu -----------------------------------------------------------------------------------------------------------------------
+ */
+
+ /*
+ * start Reponsive footer -----------------------------------------------------------------------------------------------------------------------
+ */
+
+ .row .info{ 
+
+			display: inline-block; /* Thành phần sẽ hiển thị như một khối, nhưng là một khối nội tuyến. (inline, không ngắt dòng). */
+			float: left;
+			
+		}
+
+ .row .info ul li{ 
+
+ 			list-style: none; /* kiểu danh sách  */
+ 			padding: 0.1em 0.8em; /* thêm vào các khoảng cách bên trên,phải,dưới,trái : padding: 25px(TOP) 50px(right) 75px(BOT) 100px(left); */
+ 			
+
+}
+
+ .row .info ul li a{ 
+ 			/*text-transform: capitalize; /* Chữ đầu tiên của mỗi thành phần là chữ hoa.*/
+			text-decoration: none; /* Định dạng văn bản bình thường, đây là dạng mặc định. */
+			color: Gray;
+			font-size: 0.8em;		
+
+}
+
+ .row .info ul li a:hover{ /* hover là tác vụ khi rê chuột vào */
+			color: white; 
+		}
+
+/*
+ * end Reponsive footer -----------------------------------------------------------------------------------------------------------------------
  */
 
 
