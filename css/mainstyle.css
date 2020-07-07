@@ -69,47 +69,70 @@ label{
     border: 0.01em solid white;  /* đường biên */
 
     position: fixed; /* cố định đối tượng 1 vị trí với top và left*/
- 	top: 0; /*Nằm trên cùng*/
- 	left: 0; /*Nằm sát bên trái*/
+ 	
  	width: 100%
 
 }
 
+.toolbar{
+
+ 	background-color: #89F4EF;
+}
+
+.toolbar a{
+
+ 	color: white;
+}
+.toolbar label{
+
+ 	color: white;
+}
+
+
 .logo{
-
-
+	padding: 0 1.5em;
 }
 
 .logo .textlogo {
-	color: white;
-  	text-align: center;
-  	font-family: Logo;
+	
+	color: #591e5d;
+    font-family: Logo; 
   	font-size: 1.5em;
-  	}
+  	text-shadow: 2px 2px 5px #591e5d; /* Đổ bóng cho chữ */
+ }
 
-img.middle {  /* chữ sẽ ở giửa ảnh */
-  vertical-align: middle;
+ .header-left .logo{
+	display: inline-block; /* Thành phần sẽ hiển thị như một khối, nhưng là một khối nội tuyến. (inline, không ngắt dòng). */
 }
 
-.formseach{
+
+img.middle {  /* chữ vị trí của chữ với nằm ngang với ảnh */
+  vertical-align: bottom; 
+}
+
+.search-container button {
+
+  border: none;
+}
+.search-container input[type=text] {
+  border: none;
+}
+
+.search-container button:hover {
+  background: #ccc;
 }
 
 
 
-.header-right {
-  float: right;
-}
 
-.header-left {
-  float: left;
 
-			
-}
+.menu {
 
-.header-left .logo{
-	        display: inline-block; /* Thành phần sẽ hiển thị như một khối, nhưng là một khối nội tuyến. (inline, không ngắt dòng). */
-			float: left;
-			padding: 0.5em 0.8em; /* thêm vào các khoảng cách bên trên,phải,dưới,trái : padding: 25px(TOP) 50px(right) 75px(BOT) 100px(left); */
+	list-style: none; /* Ký hiệu trước các danh mục thuộc thẻ <li> ( vd : * danh mục , - danh mục , hoặc : + danh mục)  */
+	margin: 0;
+	padding: 0 0.5em; /* thêm vào các khoảng cách bên trên,phải,dưới,trái : padding: 25px(TOP) 50px(right) 75px(BOT) 100px(left); */
+	overflow: hidden; /* Khi chiều cao của box không đủ chứa text, thì text bị tràn sẽ được dấu đi. */
+	z-index: 100000; /*Hiển thị lớp trên , lớp 100000*/
 }
 
 /*
