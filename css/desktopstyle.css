@@ -13,8 +13,19 @@
  @media screen and (min-width: 1024px){
 
 /*
- * start Reponsive footer -----------------------------------------------------------------------------------------------------------------------
+ * start Reponsive header -----------------------------------------------------------------------------------------------------------------------
  */
+
+  .header .icon {
+  display: none;
+}
+  .header .icon {
+  
+}
+
+.nav section.loaisanpham .sanpham .icon{
+	display: none;
+}
 
 
 /*
@@ -23,29 +34,29 @@
 
 
 
-		.mainmenu ul li{ 
 
-			display: inline-block; /* Thành phần sẽ hiển thị như một khối, nhưng là một khối nội tuyến. (inline, không ngắt dòng). */
-			list-style: none; /* kiểu danh sách  */
-			float: left;
-			padding: 0.5em 0.8em; /* thêm vào các khoảng cách bên trên,phải,dưới,trái : padding: 25px(TOP) 50px(right) 75px(BOT) 100px(left); */
-		}
-		.mainmenu li:hover{ /* hover là tác vụ khi rê chuột vào */
-			background-color: white;
- 			color: black;
-		}
-		.mainmenu li.active{  /* trang đang hoạt động sẽ có class active */
-			background-color: #4CAF50;
-		}
-		.mainmenu li a {
-			text-transform: capitalize; /* Chữ đầu tiên của mỗi thành phần là chữ hoa.*/
-			text-decoration: none; /* Định dạng văn bản bình thường, đây là dạng mặc định. */
-			color: #591e5d;
-			font-size: 0.8em;
-		}
-		.mainmenu li.active a{
-			color: white;
-		}
+.mainmenu ul li{ 
+	display: inline-block; /* Thành phần sẽ hiển thị như một khối, nhưng là một khối nội tuyến. (inline, không ngắt dòng). */
+	list-style: none; /* kiểu danh sách  */
+	float: left;
+	padding: 0.5em 0.8em; /* thêm vào các khoảng cách bên trên,phải,dưới,trái : padding: 25px(TOP) 50px(right) 75px(BOT) 100px(left); */
+}
+.mainmenu li:hover{ /* hover là tác vụ khi rê chuột vào */
+	background-color: white;
+	color: black;
+}
+.mainmenu li.active{  /* trang đang hoạt động sẽ có class active */
+	background-color: #4CAF50;
+}
+.mainmenu li a {
+	text-transform: capitalize; /* Chữ đầu tiên của mỗi thành phần là chữ hoa.*/
+	text-decoration: none; /* Định dạng văn bản bình thường, đây là dạng mặc định. */
+	color: #591e5d;
+	font-size: 0.8em;
+}
+.mainmenu li.active a{
+	color: white;
+	}
 /*
  * end Reponsive Menu -----------------------------------------------------------------------------------------------------------------------
  */
@@ -56,11 +67,12 @@
  .row .nav-toolbar{
  	display: inline-block; /* Thành phần sẽ hiển thị như một khối, nhưng là một khối nội tuyến. (inline, không ngắt dòng). */
  	float: left;
- 	padding: 0.1em 1.5em; /* thêm vào các khoảng cách bên trên,phải,dưới,trái : padding: 25px(TOP) 50px(right) 75px(BOT) 100px(left); */
+ 	padding: 0.1em 1.5em ; /* thêm vào các khoảng cách bên trên,phải,dưới,trái : padding: 25px(TOP) 50px(right) 75px(BOT) 100px(left); */
  }
  .row .nav-toolbar a{
+ 	color: #8A8A8A;
  	display: inline-block; /* Thành phần sẽ hiển thị như một khối, nhưng là một khối nội tuyến. (inline, không ngắt dòng). */
- 	padding: 0.1em 0em 0 0.3em; /* thêm vào các khoảng cách bên trên,phải,dưới,trái : padding: 25px(TOP) 50px(right) 75px(BOT) 100px(left); */
+ 	padding: 0.1em 1.5em 0 0.3em; /* thêm vào các khoảng cách bên trên,phải,dưới,trái : padding: 25px(TOP) 50px(right) 75px(BOT) 100px(left); */
  }
 
   .row .nav-toolbar a:hover{
@@ -72,10 +84,24 @@
  	display: inline-block; /* Thành phần sẽ hiển thị như một khối, nhưng là một khối nội tuyến. (inline, không ngắt dòng). */
  	float: right;
  	padding: 0.1em 1.5em; /* thêm vào các khoảng cách bên trên,phải,dưới,trái : padding: 25px(TOP) 50px(right) 75px(BOT) 100px(left); */
+ 	
+ }
+
+  .row .nav-toolbar-right a{
+ 	color: #8A8A8A;
+ 	display: inline-block; /* Thành phần sẽ hiển thị như một khối, nhưng là một khối nội tuyến. (inline, không ngắt dòng). */
+ 	padding: 0.1em 1.5em 0 0.3em; /* thêm vào các khoảng cách bên trên,phải,dưới,trái : padding: 25px(TOP) 50px(right) 75px(BOT) 100px(left); */
+ 
+ }
+
+ .row .nav-toolbar-right a:hover{
+ 	color: #591e5d;
+ 	text-shadow: 2px 2px 5px gray;
  }
  /*
  * end Reponsive toolbar -----------------------------------------------------------------------------------------------------------------------
  */
+
 
 .header-left{
  	 float: left;
@@ -96,8 +122,117 @@
 
 
  /*
- * end Reponsive footer -----------------------------------------------------------------------------------------------------------------------
+ * end Reponsive header -----------------------------------------------------------------------------------------------------------------------
  */
+
+
+ /*
+ * start Reponsive nav -----------------------------------------------------------------------------------------------------------------------
+ */
+
+.nav {
+
+	background-color: #EEEEEE;
+	overflow: hidden;
+	margin: 10% 0% 0% 0%;
+	
+
+	padding: 0.3em 1em 0.3em 0em; /* thêm vào các khoảng cách bên trên,phải,dưới,trái : padding: 25px(TOP) 50px(right) 75px(BOT) 100px(left); */
+
+}
+
+.nav section{
+
+	overflow: hidden;
+	margin: 0;
+
+	padding: 0.3em 1em 0.3em 1em; /* thêm vào các khoảng cách bên trên,phải,dưới,trái : padding: 25px(TOP) 50px(right) 75px(BOT) 100px(left); */
+
+}
+
+.nav section.slideshow{
+
+	background-color: white;
+	overflow: hidden;
+	margin: 0 10% 0 10%;
+	/*float: top;*/
+
+	padding: 0.3em 1em 0.3em 1em; /* thêm vào các khoảng cách bên trên,phải,dưới,trái : padding: 25px(TOP) 50px(right) 75px(BOT) 100px(left); */
+
+}
+
+.nav section.loaisanpham{
+
+	background-color: white;
+	overflow: hidden;
+	margin: 0 1% 0 10%;
+	float: left;
+
+	padding: 0.3em 0em 0.3em 0em; /* thêm vào các khoảng cách bên trên,phải,dưới,trái : padding: 25px(TOP) 50px(right) 75px(BOT) 100px(left); */
+	width: 20%
+
+}
+
+
+.nav section.loaisanpham .sanpham{
+
+	margin-top: -0.2em;
+	padding: 0.5em 2em;
+	background-color: #591e5d;
+  	box-shadow: 1px 1px 0.5px gray;
+	width: 100%;
+
+}
+
+ 
+
+
+
+.nav section.noibat{
+
+	background-color: white;
+	overflow: hidden;
+	margin: -2% 10% 0% 2%;
+	padding: 0;
+
+	padding: 0.3em 1em 0.3em 1em; /* thêm vào các khoảng cách bên trên,phải,dưới,trái : padding: 25px(TOP) 50px(right) 75px(BOT) 100px(left); */
+	
+
+}
+
+.nav section.danhsachsanpham{
+
+	background-color: white;
+	overflow: hidden;
+	margin: 0 10% 0 10%;
+	padding: 0;
+	padding: 0.3em 1em 0.3em 1em; /* thêm vào các khoảng cách bên trên,phải,dưới,trái : padding: 25px(TOP) 50px(right) 75px(BOT) 100px(left); */
+
+}
+
+
+
+.sanpham {
+
+	background-color: blue;
+	margin-bottom: 0.5em;
+
+	padding: 0.3em 1em 0.3em 1em; /* thêm vào các khoảng cách bên trên,phải,dưới,trái : padding: 25px(TOP) 50px(right) 75px(BOT) 100px(left); */
+
+	box-sizing: border-box;
+
+}
+
+.motasanpham {
+	color: black;
+}
+
+.danhsachsanpham {
+}
+/*
+ * end Reponsive nav -----------------------------------------------------------------------------------------------------------------------
+ */
+
 
 
 
