@@ -114,29 +114,6 @@ p {
   padding: 8px 10px;
 }
 
-/*-------------------------css liên hệ-----------------------------------------------------------------------------*/
-
-.lienhe {
-  background-color: #ddccff;
-  margin: 16px 55% 30px 10%; 
-}
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 15px;
-  border-radius: 4px;  /*bo tròn đường viền*/
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-  background: #e6ffff;
-  display: inline-block;
-  border: none;
-}
-.lienhe textarea:hover{
-background-color: #ccffff;
-outline: none;
-}
-
 
 
 
