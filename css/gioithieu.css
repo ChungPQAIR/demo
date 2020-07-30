@@ -32,11 +32,18 @@
 	padding: 2em 2em 2em 2em;
 }
 .gioithieuduoi{
-	background-color: white;
+	background-color: #CCCCFF;
 	float: right;
 	width: 58.5%;
 	height: 10%;
+	margin-top: 0.2em;
 	margin-right: 10%;
+	border-radius: 3em;
+	text-decoration: none;
+	font-size: 1em;
+	overflow: hidden;
+	text-align: center;
+	padding-bottom: 1em;
 	
 }
 
